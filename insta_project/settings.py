@@ -122,4 +122,4 @@ STATIC_URL = '/static/'
 
 # insta_project/settings.py
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, 'files')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
