@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Upload to Azure Storage File</title>
+    <h1>Upload to Azure Storage File</h1>
+</head>
+<body>
+    <form method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>
+            <label for="id_title">Description:</label>
+            <textarea name="title" cols="40" rows="10" required id="id_title"></textarea>
+        </p>
+        <p>
+            <label> Upload File: </label>
+            <input type="file" name="myfile">
+        </p>
+        <p>
+            <button type="submit">Upload File</button>
+        </p>
+    </form>
+    <p><a href="{% url 'home' %}">Return to home</a></p>
+</body>
+</html>
+
+
